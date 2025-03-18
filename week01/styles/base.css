@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #505050;
+  --secondary-color: #262626;
+  --background-color: #b4b4b4;
+  --text-color: #333;
+  --font-primary: "Merriweather", roboto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 100%;
+}
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+h1 {
+  padding: 10px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: #ccc;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 0 20px;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul li:hover {
+  color: #3480b2;
+  background-color: aliceblue;
+}
+.grid {
+  display: flex;
+  height: 20em;
+  justify-content: space-between;
+  width: 100%;
+}
+main {
+  background-color: white;
+  padding: 20px;
+}
+section {
+  width: 70%;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.card h2 {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-radius: 10px 10px 0 0;
+}
+.card {
+  border-radius: 10px 10px 0 0;
+}
+aside {
+  background-color: #e2e2e2;
+  width: 300px;
+}
+aside ul {
+  padding: 20px;
+}
+img {
+  width: 100px;
+  height: auto;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+  text-align: center;
+}
+.country-description {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.country h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+  background-color: white;
+  color: black;
+  margin-bottom: 5px;
+}
