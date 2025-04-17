@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeal Cargo</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Fundamentals by Adetoke"
+    />
+    <meta name="author" content="Adetoke Faderin assignment project" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/dates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/zealcargologo.webp" alt="Zeal Cargo Logo" />
+        <div class="logo-text">
+          <h1>Zeal Cargo</h1>
+        </div>
+        </div>
+      <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+          </ul>
+          <div class="menu-icon" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      </nav>
+    </header>
+    <main>
+     <section class="contact-section">
+          <div class="container">
+               <h1>Contact Us</h1>
+               <form id="contact-form">
+                    <div class="form-group">
+                         <label for="name">Full Name:</label>
+                         <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                         <label for="email">Email:</label>
+                         <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                         <label for="subject">Subject:</label>
+                         <select id="subject" name="subject">
+                              <option value="inquiry">General Inquiry</option>
+                              <option value="quote">Request a Quote</option>
+                              <option value="support">Customer Support</option>
+                         </select>
+                    </div>
+                    
+                    <div class="form-group">
+                         <label for="message">Message:</label>
+                         <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <a href="#" class="btn">Send Message</a>
+               </form>
+          </div>
+    </section>
+    </main>
+    <footer>
+      <section class="footer-content">
+        <div class="cargo-info">
+          <p>Zeal Cargo</p>
+          <p>31A Bode Fakunle Street</p>
+          <p>OPIC</p>
+          <p>zealcargo.org</p>
+          <p>(234) 703-2338-813</p>
+        </div>
+        <div class="footer-info">
+          <p>&copy; <span id="currentyear"></span> Zeal Cargo</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+          <p>Zeal Cargo. All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
+    <script>
+  const contactForm = document.getElementById('contact-form');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); // stop default form action
+
+    // Grab values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Basic Validation
+    if (!name || !email || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+    // Email pattern check
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Optionally store to localStorage
+    const formData = {
+      name,
+      email,
+      message,
+      submittedAt: new Date().toISOString()
+    };
+    localStorage.setItem('zealContactData', JSON.stringify(formData));
+
+    // Confirmation
+    alert('Thanks for reaching out! We’ll get back to you shortly.');
+
+    // Reset form
+    contactForm.reset();
+  });
+</script>
+<button id="back-to-top" title="Back to Top">↑</button>
+  </body>
+</html>

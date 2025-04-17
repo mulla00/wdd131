@@ -1,0 +1,142 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background: #c13030;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background: url("hero-large.webp") no-repeat center center/cover;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #c13030;
+  color: white;
+}
+
+/* Responsive Image */
+/* @media (max-width: 768px) {
+  main {
+    background: url("hero-small.webp") no-repeat center center/cover;
+    flex-direction: column;
+  }
+} */
+
+/* Data and Weather Boxes */
+/* .data-box,
+.weather-box {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+} */ 
+
+/* Hero Section (Main Container) */
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero img {
+     display: block;
+     height: auto;
+     width: 100%;
+}
+/* Heading Style */
+h1 {
+  margin: 0;
+  padding: 1rem 0;
+  background: #151854;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 15px solid #8a3324;
+}
+
+/* Common Card Styling (Data & Weather) */
+.data,
+.weather {
+  position: absolute;
+  top: 20%;
+  padding: 1.5rem;
+  border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  line-height: 0.6;
+}
+
+/* Data Section (Left Side) */
+.data {
+  left: 4%;
+  background: white; 
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: black;
+  opacity: 0.8;
+}
+
+/* Weather Section (Right Side) */
+.weather {
+  right: 4%;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: black;
+  opacity: 0.8;
+  top: 350px;
+}
+.data h2, .weather h2 {
+     background-color: #8a3324;
+     padding: 10px;
+     margin-right: 10px;
+     color: white;
+}
+/* Footer Styling */
+footer {
+  background: #151854; /* Red background */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data,
+  .weather {
+    position: static; /* Stack in flow for small screens */
+    margin: 1rem 0;
+    width: 90%;
+  }
+}

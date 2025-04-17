@@ -1,0 +1,47 @@
+.bars {
+  display: none !important;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.mobile-view {
+  padding: 10px 0;
+}
+
+.mobile-view ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block !important;
+  }
+
+  .xmark {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav .desktop ul {
+    display: none;
+  }
+
+  .temples {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .temples {
+    grid-template-columns: 1fr;
+  }
+}

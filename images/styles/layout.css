@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #222;
+  --secondary-color: #222;
+  --background-color: #333;
+  --text-color1: #fff;
+  --font-primary: "Merriweather", roboto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color1);
+  max-width: 100%;
+}
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+h1 {
+  padding: 10px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  align-items: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  background-color: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul li:hover {
+  color: #3480b2;
+  background-color: aliceblue;
+}
+.container {
+  display: flex;
+  height: 20em;
+}
+main {
+  flex: 2;
+  background-color: #333;
+  padding: 20px;
+}
+aside {
+  flex: 1;
+  background-color: #ccc;
+  padding: 20px;
+}

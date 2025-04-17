@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" BYU-Idaho WDD 131 - Dynamic Web Fundamentals course"
+    />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="./styles/temples.css" />
+    <link rel="stylesheet" href="./styles/temples-larger.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>WDD 131 - Dynamic Web Fundamentals</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="desktop">
+          <h1>Temple Album</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+          </ul>
+          <i class="bars fa-solid fa-bars"></i>
+        </div>
+
+        <div class="mobile-view">
+          <i class="xmark fa-solid fa-xmark"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Large</a></li>
+            <li><a href="#">Small</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="temples">
+        <div class="temple">
+          <img src="images/aba_nigeria_temple_lds.webp" alt="Temple 1" />
+          <p>Aba Nigeria Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/accra_ghana_temple_lds.webp" alt="Temple 2" />
+          <p>Accra Ghana Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/anchorage_temple_lds.webp" alt="Temple 3" />
+          <p>Anchorage Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/apia_samoa_temple_lds.webp" alt="Temple 4" />
+          <p>Apia Samoa Temple</p>
+        </div>
+        <div class="temple">
+          <img
+            src="images/bentonville_arkansas_temple_exterior.webp"
+            alt="Temple 5"
+          />
+          <p>Bentonville Arkansas Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/billings_temple_lds.webp" alt="Temple 6" />
+          <p>Billings Montana Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/fort_collins_temple_sunset.webp" alt="Temple 7" />
+          <p>Fort Collins Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/gilbert_arizona_lds_temple.webp" alt="Temple 8" />
+          <p>Gilbert Arizona Temple</p>
+        </div>
+        <div class="temple">
+          <img src="images/salt_lake_temple_lds.webp" alt="Temple 9" />
+          <p>Salt Lake Temple</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌹Adetoke Faderin🌹 Nigeria.</p>
+      <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/temples.js"></script>
+    <script src="./scripts/getdates.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+/* confirmation.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f0f7;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Container */
+.container {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    color: white;
+    background-color: #4c2a4c;
+}
+
+/* Confirmation message */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Back to home button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: #4c2a4c;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .back-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 30px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}

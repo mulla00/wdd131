@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeal Cargo</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Fundamentals by Adetoke"
+    />
+    <meta name="author" content="Adetoke Faderin assignment project" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/zealcargologo.webp" alt="Zeal Cargo Logo" />
+        <div class="logo-text">
+          <h1>Zeal Cargo</h1>
+        </div>
+        </div>
+      <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="menu-icon" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      </nav>
+    </header>
+    <main>
+     <section class="services">
+          <h1>Our Services</h1>
+          <p>Comprehensive shipping solutions tailored to your business needs.</p>
+     </section>
+
+     <section class="services-grid">
+          <div class="service-card" id="service-air">
+               <h2>Air Freight</h2>
+               <p>Fast and reliable air freight solutions for time-sensitive shipments. We partner with airlines to ensure that your cargo reaches its destination on schedule.</p>
+          </div>
+
+          <div class="service-card" id="service-sea">
+               <h2>Sea Freight</h2>
+               <p>Cost-effective sea freight solutions for large volume shipments. Our extensive network of ports and carriers ensures smooth transportation across oceans.</p>
+          </div>
+
+          <div class="service-card" id="service-road">
+               <h2>Road Transport</h2>
+               <p>Efficient road transportation solutions for domestic and cross-border shipments. Our modern fleet and experienced drivers ensure safe delivery.</p>
+          </div>
+
+          <div class="service-card" id="service-rail">
+                <h2>Rail Freight</h2>
+                <p>Environmentally friendly rail freight solutions for long-distance transportation. A perfect balance of cost-efficiency and timely delivery.</p>
+            </div>
+
+            <div class="service-card" id="service-warehouse">
+                <h2>Warehousing</h2>
+                <p>Secure and flexible warehousing solutions to optimize your supply chain. Our state-of-the-art facilities provide the perfect storage for your goods.</p>
+            </div>
+
+            <div class="service-card" id="service-customs">
+                <h2>Customs Clearance</h2>
+                <p>Expert customs clearance services to navigate complex international regulations. Our specialists ensure smooth and compliant border crossings.</p>
+            </div>
+     </section>
+
+     <div id="service-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-details">
+                    <!-- Modal content will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+
+        <section class="service-comparison">
+             <div class="table-container">
+                 <h3>Compare Our Services</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Speed</th>
+                            <th>Cost</th>
+                            <th>Capacity</th>
+                            <th>Environmental Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Air Freight</td>
+                            <td>Very Fast</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sea Freight</td>
+                            <td>Slow</td>
+                            <td>Low</td>
+                            <td>Very High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Road Transport</td>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>Medium-High</td>
+                        </tr>
+                        <tr>
+                            <td>Rail Freight</td>
+                            <td>Medium</td>
+                            <td>Medium-Low</td>
+                            <td>High</td>
+                            <td>Low</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+         <section class="cta-section">
+            <h2>Ready to Ship with Us?</h2>
+            <p>Contact our expert team today to discuss your shipping requirements and get a personalized quote.</p>
+            <a href="contact.html" class="cta-button">Get a Quote</a>
+        </section>
+    </main>
+    <footer>
+      <section class="footer-content">
+        <div class="cargo-info">
+          <p>Zeal Cargo</p>
+          <p>31A Bode Fakunle Street</p>
+          <p>OPIC</p>
+          <p>zealcargo.org</p>
+          <p>(234) 703-2338-813</p>
+        </div>
+        <div class="footer-info">
+          <p>&copy; <span id="currentyear"></span> Zeal Cargo</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+          <p>Zeal Cargo. All Rights Reserved.</p>
+        </div>
+      </section>
+    </footer>
+    <button id="back-to-top" title="Back to Top">↑</button>
+  </body>
+</html>

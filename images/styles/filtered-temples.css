@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #212a31;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #212a31;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .desktop ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3;
+}
+
+nav ul li a:hover {
+  color: #124e66;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+main {
+  padding: 1em;
+  margin: 1em;
+}
+
+main h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.temple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.temple section {
+  background-color: rgb(233, 230, 230);
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.temple img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figure {
+  margin: 1em 1em 2em 1em;
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+footer {
+  grid-area: footer;
+  background-color: #212a31;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 25px;
+}
+
+.bars {
+  display: none !important;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.mobile-view {
+  padding: 10px 0;
+}
+
+.mobile-view ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+  font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block !important;
+  }
+
+  .xmark {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav .desktop ul {
+    display: none;
+  }
+
+  .temples {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .temples {
+    grid-template-columns: 1fr;
+  }
+}
